@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_24859_angular_test_app.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+    <script src="x_24859_angular.app_controller.jsdbx"></script>
+
+    <div ng-app="myApp" ng-controller="appController">
+        <!--<input type="text" ng-model="myVar" placeholder="Enter some text here"></input>
+		{{myVar}}-->
+        <div class="modal-body">
+            <div class="container">
+                <form name="" class="form-horizontal">
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Member Name</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="m_name" placeholder="Full member name"></input>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+                <footer class="modal-footer">
+                    <button class="btn btn-default" translate="" ng-click="clear()">Cancel</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</j:jelly>
+]]></html>
+        <name>test_app</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-04 21:28:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0daa1e62db610300a0b2d100cf961963</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>test_app</sys_name>
+        <sys_package display_value="Angular" source="x_24859_angular">5b22d2e2db210300a0b2d100cf9619b9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular">5b22d2e2db210300a0b2d100cf9619b9</sys_scope>
+        <sys_update_name>sys_ui_page_0daa1e62db610300a0b2d100cf961963</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-06 16:06:55</sys_updated_on>
+    </sys_ui_page>
+</record_update>

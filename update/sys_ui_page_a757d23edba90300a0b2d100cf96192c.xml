@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_24859_angular_test.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <!--<link rel="stylesheet" href="styles/heisenberg/heisenberg_all.css?version=4.0.0"></link>
+    <link rel="stylesheet" href="styles/heisenberg/source_sans_pro.css?version=4.0.0"></link>-->
+    <link rel="stylesheet" type="text/css" href="styles/dev-studio.css?version=4.0.0"></link>
+    <link rel="stylesheet" type="text/css" href="styles/cn-icons/cn-icons.css"></link>
+    <script type="text/javascript" src="scripts/dev-studio/lib/angular/angular.min.js"></script>
+    <!-- NG APP JS -->
+    <script src="x_24859_angular.rxclaim_search.jsdbx"></script>
+    <!-- BEGIN NG APP -->
+    <div ng-app="rxclaim" ng-controller="rxclaim_search as rsx">
+
+        <div class="container" >
+          <button class="btn btn-primary" ng-click="clearTxt()">CLEAR</button>
+          <p>{{var_a + g_user.userName;}}</p>
+            <form name="search" class="form-horizontal">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Member Name</label>
+                        <div class="col-sm-3">
+                            <input ng-model="var_a" type="text" class="form-control" id="m_name" placeholder="Full member name"></input>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Member SSN</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="m_ssn" placeholder="Social Security no dashes"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Member ID</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="m_id" placeholder="9 or 12 characters"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Member DOB</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="m_id" placeholder="MM/DD/YYYY"></input>
+                        </div>
+                    </div>
+                </div>
+                <p></p>
+
+
+            </form>
+        </div>
+
+        <footer class="modal-footer">
+            <a class="btn btn-default" translate="">Cancel</a>
+            <button type="submit" class="btn btn-primary">Search Members</button>
+        </footer>
+    </div>
+    <hr></hr>
+    <p></p>
+
+    <div class="table-list">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Member</th>
+                    <th>Member SSN</th>
+                    <th>Member ID</th>
+                    <th>Group Number</th>
+                    <th>Member DOB</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Member</td>
+                    <td>Member SSN</td>
+                    <td>Member ID</td>
+                    <td>Group Number</td>
+                    <td>Member DOB</td>
+                    <td>City</td>
+                    <td>State</td>
+                    <td>Zip</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</j:jelly>
+]]></html>
+        <name>test</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-05 16:06:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a757d23edba90300a0b2d100cf96192c</sys_id>
+        <sys_mod_count>130</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Angular" source="x_24859_angular">5b22d2e2db210300a0b2d100cf9619b9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular">5b22d2e2db210300a0b2d100cf9619b9</sys_scope>
+        <sys_update_name>sys_ui_page_a757d23edba90300a0b2d100cf96192c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-06 04:30:38</sys_updated_on>
+    </sys_ui_page>
+</record_update>

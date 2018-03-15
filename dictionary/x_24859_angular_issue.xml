@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Issue" max_length="40" name="x_24859_angular_issue" sizeclass="1" type="collection"/>
+</database>

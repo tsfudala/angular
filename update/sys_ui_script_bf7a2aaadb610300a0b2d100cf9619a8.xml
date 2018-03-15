@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_24859_angular.rxclaim_search</name>
+        <script><![CDATA[angular.module('rxclaim',[]);
+angular.module('rxclaim').controller('rxclaim_search', function($scope){
+	
+	$scope.m_ssn = '';
+	$scope.m_name = '';
+	$scope.m_id = '';
+	$scope.m_dob = '';
+	
+	$scope.clearTxt = function () {
+		
+		$scope.m_ssn = '';
+		$scope.m_name = '';
+		$scope.m_id = '';
+		$scope.m_dob = '';
+		
+		alert("This is " + g_user.userName);
+		
+	};
+	
+});]]></script>
+        <script_name>rxclaim_search</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-04 22:39:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>bf7a2aaadb610300a0b2d100cf9619a8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>x_24859_angular.rxclaim_search</sys_name>
+        <sys_package display_value="Angular" source="x_24859_angular">5b22d2e2db210300a0b2d100cf9619b9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular">5b22d2e2db210300a0b2d100cf9619b9</sys_scope>
+        <sys_update_name>sys_ui_script_bf7a2aaadb610300a0b2d100cf9619a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-06 04:31:44</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

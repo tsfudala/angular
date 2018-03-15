@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function getClaims() {
+
+    var j = {
+        "claims": [{
+            "activeIndicator": "I",
+            "memberId": "123456789",
+            "carrierId": "TESTANGEL",
+            "accountId": "TESTANGEL",
+            "groupId": "STUDENT AGE 1",
+            "fromDate": "20090713",
+            "thruDate": "20391231",
+            "planId": "PCGUZ80",
+            "lastName": "TEST",
+            "firstName": "WALTER",
+            "dateOfBirth": "19090713",
+            "gender": "M"
+        }, {
+            "activeIndicator": "I",
+            "memberId": "123456789",
+            "carrierId": "TESTANGEL",
+            "accountId": "TESTANGEL",
+            "groupId": "STUDENT AGE 1",
+            "fromDate": "20090713",
+            "thruDate": "20391231",
+            "planId": "PCGUZ80",
+            "lastName": "FUDALA",
+            "firstName": "TODD",
+            "dateOfBirth": "19090713",
+            "gender": "M"
+        }]
+    };
+
+    return j;
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_24859_angular_sample_page.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:breakpoint/>
+	<g:evaluate>
+
+		var j = getClaims();
+
+		j;
+
+	</g:evaluate>
+
+
+
+
+	        <table class="table table-bordered table-hover">
+            <thead class="table-col-header">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Member ID</th>
+                <th>Carrier ID</th>
+                <th>Acccount ID</th>
+                <th>Group ID</th>
+                <th>Plan ID</th>
+                <th>Eff Date From</th>
+                <th>Eff Date To</th>
+
+                <j:forEach var="jvar_row" items="${j.claims}">
+					<g:evaluate jelly="true">
+
+						var firstName, lastName, dateOfBirth, gender, memberId, carrierId, accountId, groupId, planId, fromDate, thruDate
+						firstName = jelly.jvar_row.firstName;
+						lastName = jelly.jvar_row.lastName;
+						dateOfBirth = jelly.jvar_row.dateOfBirth;
+						gender = jelly.jvar_row.gender;
+						member_id = jelly.jvar_row.memberId;
+						carrierId = jelly.jvar_row.carrierId;
+						accountId = jelly.jvar_row.accountId;
+						groupId = jelly.jvar_row.groupId;
+						planId = jelly.jvar_row.planId;
+						fromDate = jelly.jvar_row.fromDate;
+						thruDate = jelly.jvar_row.thruDate;
+
+						</g:evaluate>
+
+                    <tr onclick="getClaims()">
+                        <td>${firstName}</td>
+						<td>${lastName}</td>
+						<td>${dateOfBirth}</td>
+						<td>${gender}</td>
+						<td>${memberId}</td>
+						<td>${carrierId}</td>
+						<td>${accountId}</td>
+						<td>${groupId}</td>
+						<td>${planId}</td>
+						<td>${fromDate}</td>
+						<td>${thruDate}</td>
+                    </tr>
+                </j:forEach>
+
+
+            </thead>
+        </table>
+
+
+
+
+
+
+</j:jelly>
+]]></html>
+        <name>sample_page</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-06 01:34:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1d9c504fdb614300a0b2d100cf961986</sys_id>
+        <sys_mod_count>84</sys_mod_count>
+        <sys_name>sample_page</sys_name>
+        <sys_package display_value="Angular" source="x_24859_angular">5b22d2e2db210300a0b2d100cf9619b9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular">5b22d2e2db210300a0b2d100cf9619b9</sys_scope>
+        <sys_update_name>sys_ui_page_1d9c504fdb614300a0b2d100cf961986</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-25 21:54:05</sys_updated_on>
+    </sys_ui_page>
+</record_update>
